@@ -1,5 +1,243 @@
 .header{
-    width: 100%;
-    height: 40px;
-    background-color: red;
+    padding: 16px 0px;
+    @include media-breakpoint-up(xl) {
+        padding: 22px 0px;
+        background: transparent;
+        transition: background .5s;
+    }
+}
+
+.header--sticky{
+    @include media-breakpoint-up(xl) {
+        position: sticky;
+        top: 0;
+        padding: 24.12px;
+        background: linear-gradient(270.43deg, #88C4C0 15.37%, rgba(39, 70, 70, 0) 89.72%), #274646;
+
+        & .header__logo-icon{
+            font-size: 0px;
+            margin-right: 0px;
+        }
+        & .header__logo{
+            font-family: Geometria;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            color: #E1FDF4;
+            text-shadow: 0px 0px 0px rgba($color: #000000, $alpha: 0);
+        }
+    }
+}
+
+.header__container{}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #A4E1D8;
+
+
+    @include media-breakpoint-up(xl) {
+        font-size: 26px;
+        text-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 0.25);
+        transition: text-shadow .25s;
+    }
+}
+
+.header__logo-icon{
+    color: #FC9DA9;
+    font-size: 39.45px;
+    margin-right: 9.67px;
+
+    @include media-breakpoint-up(xl) {
+        font-size: 48.31px;
+        margin-right: 11.84px;
+        transition: margin-right .25s;
+    }
+}
+
+
+.header__nav{
+    @include media-breakpoint-down(lg) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -100;
+        visibility: hidden;
+        background-color: #426667;
+        padding: 64px 0;
+        overflow-y: auto;
+        opacity: 0;
+        transition: visibility 0s .25s, z-index 0s .25s, opacity .25s;
+
+        &--show{
+            transition: opacity .25s;
+            opacity: 1;
+            visibility: visible;
+            z-index: 1000;
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        position: static;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 60px;
+        background-color: transparent;
+    }
+}
+
+.header__menu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-left: 145px;
+
+    @include media-breakpoint-up(xl) {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
+}
+
+.header__menu-item{
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 45px;
+    }
+}
+.header__menu-item + .header__menu-item{
+    @include media-breakpoint-up(xl) {
+        margin-left: 22px;
+    }
+}
+
+.header__menu-link{
+    text-decoration: none;
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: text-decoration .25s;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.header__btn{
+    padding: 11px 27px;
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #E1FDF4;
+    border: 1px solid #E1FDF4;
+    border-radius: 6px;
+
+    @include media-breakpoint-down(lg) {
+        margin-left: 145px;
+        margin-bottom: 42px;
+        padding: 9.5px 24px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+.header__contacts{
+    @include media-breakpoint-down(lg) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+}
+
+.header__contacts-phone{
+    display: block;
+    text-decoration: none;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    color: #274646;
+
+    @include media-breakpoint-down(lg) {
+        font-family: Bebas Neue;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        color: #E1FDF4;
+    }
+}
+
+.header__contacts-description{
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    @include media-breakpoint-down(lg) {
+        width: 145.05px;
+        padding-left: 19.15px;
+        padding-right: 32.9px;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        color: #E1FDF4;
+    }
+}
+
+.header__burger{
+    position: fixed;
+    top: 11px;
+    right: 18px;
+    z-index: 1002;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/dist/icons/icon-burger.svg);
+    background-position: center;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+
+    transition: background-color .25s;
+
+    &--sticky{
+        background-color: #426667;
+    }
+    &--close{
+        background-image: url(../img/dist/icons/icon-cross.svg);
+        background-size: 24px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        display: none;
+    }
 }
