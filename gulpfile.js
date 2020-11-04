@@ -23,6 +23,7 @@ const scss_src = [
 	"app/blocks/**/*.scss",
 ];
 const css_src = [
+	"app/font/**/*.css",
 	"app/css/**/*.css",
 	"!app/css/style.css",
 	"!app/css/style.min.css",
