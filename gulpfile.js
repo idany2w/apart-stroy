@@ -19,6 +19,7 @@ const browsersList = [
 
 const scss_src = [
 	"app/scss/_variables.scss",
+	"app/scss/_bootstrap.scss",
 	"app/scss/**/*.scss",
 	"app/blocks/**/*.scss",
 ];
