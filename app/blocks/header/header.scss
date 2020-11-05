@@ -1,5 +1,7 @@
 .header{
     padding: 16px 0px;
+    position: relative;
+    z-index: 5;
     @include media-breakpoint-up(xl) {
         padding: 22px 0px;
         background: transparent;
@@ -11,6 +13,7 @@
     @include media-breakpoint-up(xl) {
         position: sticky;
         top: 0;
+        z-index: 1000;
         padding: 24.12px;
         background: linear-gradient(270.43deg, #88C4C0 15.37%, rgba(39, 70, 70, 0) 89.72%), #274646;
 
@@ -18,6 +21,7 @@
             font-size: 0px;
             margin-right: 0px;
         }
+
         & .header__logo{
             font-family: Geometria;
             font-style: normal;
@@ -29,8 +33,6 @@
         }
     }
 }
-
-.header__container{}
 
 .header__inner{
     display: flex;
@@ -49,6 +51,8 @@
     line-height: 110%;
     letter-spacing: 0.02em;
     color: #A4E1D8;
+    position: relative;
+    z-index: 2;
 
 
     @include media-breakpoint-up(xl) {
@@ -156,6 +160,7 @@
     color: #E1FDF4;
     border: 1px solid #E1FDF4;
     border-radius: 6px;
+    cursor: pointer;
 
     @include media-breakpoint-down(lg) {
         margin-left: 145px;
@@ -167,6 +172,7 @@
 }
 
 .header__contacts{
+    text-align: right;
     @include media-breakpoint-down(lg) {
         display: flex;
         flex-direction: row-reverse;
@@ -186,9 +192,6 @@
     color: #274646;
 
     @include media-breakpoint-down(lg) {
-        font-family: Bebas Neue;
-        font-style: normal;
-        font-weight: bold;
         font-size: 24px;
         line-height: 24px;
         color: #E1FDF4;
@@ -218,9 +221,9 @@
     top: 11px;
     right: 18px;
     z-index: 1002;
-    width: 50px;
+    width: 50px; 
     height: 50px;
-    background-image: url(../img/dist/icons/icon-burger.svg);
+    background-image: url('../img/dist/icons/icon-burger.svg');
     background-position: center;
     background-size: 26px;
     background-repeat: no-repeat;
@@ -233,7 +236,7 @@
         background-color: #426667;
     }
     &--close{
-        background-image: url(../img/dist/icons/icon-cross.svg);
+        background-image: url('../img/dist/icons/icon-cross.svg');
         background-size: 24px;
     }
 
