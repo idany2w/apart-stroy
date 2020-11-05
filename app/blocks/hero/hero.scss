@@ -1,0 +1,93 @@
+.hero{
+    padding-top: 92px;
+    margin-top: -92px;
+    min-height: 750px;
+    background-image:url('../img/dist/hero-bg-img.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+
+    @include media-breakpoint-down(sm) {
+        min-height: 615px;
+        background-image: url('../img/dist/hero-bg-img-mobile.jpg');
+        background-position: 71% top;
+        background-size: cover;
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100.1%;
+        height: 100%;
+        background-image: url('../img/dist/hero-bg-front-mobile.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        @include media-breakpoint-up(xl) {
+            background-image: url('../img/dist/hero-bg-front.svg');
+            background-size: cover;
+        }
+    }
+
+    &__title{
+        font-family: Bebas Neue;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+        color: #A4E1D8;
+        margin: 0px;
+        @include media-breakpoint-up(xl) {
+            font-size: 65px;
+            line-height: 120%;
+            color: #99E2DB;
+            margin-top: 77px - 21px;
+        }
+
+        &--colored{
+            color: #FC9DA9;
+        }
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 92px;
+        margin-top: -92px;
+        min-height: 615px;
+        position: relative;
+        padding-bottom: 140px;
+    }
+
+    &__blob{
+        width: 116px;
+        
+        @include media-breakpoint-up(xl) {
+            margin-top: 132px;
+            margin-left: 162px;
+            width: 193px;
+        }
+    }
+    &__blob-text{
+        font-family: Geometria;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #426667;
+        @include media-breakpoint-up(xl) {
+            font-size: 30px;
+            line-height: 38px;
+            color: #426667;
+        }
+    }
+}
