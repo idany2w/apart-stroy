@@ -45,11 +45,13 @@
         letter-spacing: 0.03em;
         color: #A4E1D8;
         margin: 0px;
+        max-width: 300px;
         @include media-breakpoint-up(xl) {
             font-size: 65px;
             line-height: 120%;
             color: #99E2DB;
             margin-top: 77px - 21px;
+            max-width: 0;
         }
 
         &--colored{
