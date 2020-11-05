@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="400px" height="400px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 400 400" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+  <g style="transform-origin:center; transform-box: fill-box">
+   <path fill="#99E2DB" d="M45.14 246.98c4.186,32.937 17.679,61.552 54.971,89.987 36.901,28.138 87.46,30.431 135.555,17.069 48.08,-13.358 93.012,-42.192 118.242,-75.279 24.831,-32.566 24.058,-71.764 7.441,-110.363 -16.64,-38.65 -49.052,-76.313 -86.685,-105.009 -37.006,-28.218 -93.884,-34.507 -141.807,-22.079 -48.003,12.449 -85.545,43.179 -86.083,87.696 -0.202,16.655 -1.015,32.277 -1.778,46.937 -0.305,5.869 -0.602,11.584 -0.849,17.15 -0.867,19.54 -1.117,37.293 0.993,53.891zm-3.137 -71.257c-3.51,67.453 -6.041,116.103 56.289,163.63 75.857,57.842 206.615,8.612 258.001,-58.777 51.386,-67.39 -3.953,-161.734 -79.81,-219.576 -75.857,-57.843 -231.583,-25.075 -232.709,67.966 -0.201,16.592 -1.009,32.117 -1.771,46.757z"/>
+   <animateTransform attributeName="transform"
+	                    attributeType="XML"
+	                    type="rotate"
+	                    from="0 0 0"
+	                    to="360 0 0"
+	                    dur="50s"
+	                    repeatCount="indefinite"/>
+  </g>
+  <g style="transform-origin:center; transform-box: fill-box">
+   <path fill="#FC9DA9" fill-rule="nonzero" d="M220.846 357.892c-90.593,2.017 -110.853,-54.137 -165.157,-123.873 -54.303,-69.737 35.398,-192.722 125.991,-194.739 90.594,-2.016 194.071,41.594 195.862,122.075 1.792,80.481 -66.102,194.52 -156.696,196.537z"/>
+   <animateTransform attributeName="transform"
+	                    attributeType="XML"
+	                    type="rotate"
+	                    from="0 0 0"
+	                    to="-360 0 0"
+	                    dur="50s"
+	                    repeatCount="indefinite"/>
+  </g>
+</svg>

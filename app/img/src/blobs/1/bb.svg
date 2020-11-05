@@ -1,0 +1,22 @@
+<svg width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g style="transform-origin:center; transform-box: fill-box">
+	    <path d="M77.4878 192.483C58.2165 177.788 51.241 162.997 49.0771 145.973C47.9869 137.395 48.116 128.223 48.5638 118.13C48.6913 115.255 48.8449 112.303 49.0026 109.271C49.3966 101.7 49.8163 93.6331 49.9204 85.0318C50.1991 62.0064 69.6161 46.1228 94.4184 39.6908C119.18 33.2692 148.573 36.5175 167.702 51.1032C187.143 65.9277 203.89 85.3862 212.489 105.358C221.076 125.305 221.479 145.57 208.639 162.408C195.601 179.507 172.384 194.405 147.543 201.307C122.695 208.21 96.5636 207.028 77.4878 192.483Z" stroke="#99E2DB" stroke-width="3"/>
+	    <animateTransform attributeName="transform"
+	                    attributeType="XML"
+	                    type="rotate"
+	                    from="0 0 0"
+	                    to="360 0 0"
+	                    dur="50s"
+	                    repeatCount="indefinite"/>
+	</g>
+	<g style="transform-origin:center; transform-box: fill-box">
+	    <path d="M133.4 206.617C86.6098 207.658 76.1459 178.656 48.0989 142.638C20.0519 106.62 66.3814 43.1 113.171 42.0584C159.962 41.0169 213.406 63.541 214.331 105.108C215.256 146.676 180.19 205.575 133.4 206.617Z" fill="#FC9DA9"/>
+	    <animateTransform attributeName="transform"
+	                    attributeType="XML"
+	                    type="rotate"
+	                    from="0 0 0"
+	                    to="-360 0 0"
+	                    dur="50s"
+	                    repeatCount="indefinite"/>
+	</g>
+</svg>
