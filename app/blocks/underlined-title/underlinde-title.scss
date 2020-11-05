@@ -1,0 +1,32 @@
+.underlined-title{
+    @include media-breakpoint-up(xl) {
+        margin-top: 18px;
+        margin-bottom: 44px;
+    }
+}
+
+.underlined-title__text{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #C85664;
+    position: relative;
+    margin-left: 80px;
+    @include media-breakpoint-up(xl) {
+        margin-left: 0px;
+    }
+    &::before{
+        content: '';
+        display: block;
+        height: 3px;
+        background-color: #c85664;
+        position: absolute;
+        left: -50vw;
+        bottom: 10px;
+        width: 50vw;
+        margin-left: -20px;
+    }
+}

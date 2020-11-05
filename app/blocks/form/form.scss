@@ -1,0 +1,78 @@
+.form{
+    padding: 0px 16px;
+    @include media-breakpoint-up(xl) {
+        padding: 0px;
+    }
+}
+
+.form__input{
+    width: 100%;
+    border: 1px solid #A4E1D8;
+
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #6FABA7;
+    transition: border-color .25s;
+    padding: 16px 13px;
+
+
+    @include media-breakpoint-up(xl) {
+        font-size: 17px;
+        padding: 32px 15px;
+    }
+
+    &::placeholder{
+        color: #6FABA7;
+    }
+
+    &:focus,
+    &:hover{
+        outline: none;
+        box-shadow: none;
+        border-color: #426667;
+    }
+
+    &--phone{}
+
+    &--btn{
+        display: block;
+
+        font-family: Bebas Neue;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 130%;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+
+        background: #C85664;
+        box-shadow: 0px 4px 0px #C85664, inset 0px -5px 40px #FC9DA9;
+        border-radius: 100px;
+        border-color: transparent;
+        margin: 0 auto;
+        cursor: pointer;
+
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding: 24px 21px 20px;
+    
+        @include media-breakpoint-up(xl) {
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: 0.04em;
+            padding: 32.5px 28.5px 28.5px 28.5px;
+            margin-top: 48px;
+            box-shadow: 0px 4px 0px #C85664, inset 0px -3px 40px #FC9DA9;
+        }
+
+        &:hover,
+        &:focus{
+            outline: none;
+        }
+    }
+}

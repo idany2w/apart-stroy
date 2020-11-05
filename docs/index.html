@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta name="viewport" content="width=1440, initial-scale=0" /> -->
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
-    <title>gulp</title>
+    <title>АпартСтрой</title>
 </head>
 
 <body style="height: 300vh;">
@@ -32,7 +32,7 @@
                             <a href="#" class="header__menu-link">Расчет</a>
                         </li>
                     </ul>
-                    <button class="btn header__btn">Обратный звонок</button>
+                    <button class="btn header__btn" onclick="popup_show('form')">Обратный звонок</button>
                     <div class="header__contacts">
                         <a href="tel:+79999999999" class="header__contacts-phone">+7 (999) 999 99 99</a>
                         <span class="header__contacts-description">Ежедневно с 8:00 до 22:00</span>
@@ -70,28 +70,90 @@
 
     <section class="advantages">
         <div class="container">
-            <div class="col-12">
-                <h2 class="advantages__title"></h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="advantages__title">Приветствуем вас на сайте компании АпартСтрой</h1>
+                </div>
             </div>
-            <div class="col-xl-6">
-                <p class="advantages__description"></p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="advantages__description">
+                        Это первый сайт нашей компании в интернете, поэтому, возможно к нам мало доверия.<br>
+                        Мы работали по рекомендациям<br>
+                        и не имели названия.
+                    </p>
+                </div>
+                <div class="col-xl-6">
+                    <ul class="advantages__list">
+                        <li class="advantages__list-item">
+                            Вы не сможете увидеть наше ООО<br class="hidden-lg-down">
+                            с большим сроком работы
+                        </li>
+                        <li class="advantages__list-item">
+                            Вы не найдете на нас отзывов, многие из которых, покупаются за деньги
+                        </li>
+                        <li class="advantages__list-item">
+                            Вы не сможете поверить нам только из-за названия
+                        </li>
+                    </il>
+                </div>
             </div>
-            <div class="col-xl-6">
+        </div>
+
+        <div class="underlined-title">
+            <div class="container">
                 <div class="row">
-                    <div class="col-4">
-                        <p class="advantages__description advantages__description--small"></p>
-                    </div>
-                    <div class="col-4">
-                        <p class="advantages__description advantages__description--small"></p>
-                    </div>
-                    <div class="col-4">
-                        <p class="advantages__description advantages__description--small"></p>
+                    <div class="col-xl-6 offset-xl-6">
+                        <span class="underlined-title__text">Но...</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="advantages__underlined-titel">
-            
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="advantages__blob blob">
+                        <div class="blob__text advantages__blob-text">
+                            Мы работаем 
+                            уже более 8 лет
+                        </div>
+                        <div class="blob__bg">
+                            <div class="blob__bg-el blob__bg-el--desktop">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup">
+        <div class="popup__inner">
+            <div class="popup__content" data-content-id="form">
+
+                <h3 class="popup__title">Заявка на обратный звонок</h3>
+                <p class="popup__desc">Оставьте свои контактные данные и мы перезвоним вам в удобное время</p>
+
+                <form class="form form--popup">
+                    <div class="call-time form__call-time">
+                        <div class="call-time__el call-time__el--default call-time__el--active">
+                            <span class="call-time__text">Позвонить сейчас</span>
+                        </div>
+                        <label class="call-time__el call-time__el--manual">
+                            <span class="call-time__text">Удобное время звонка</span>
+                            <input class="call-time__input" name="Удобное время звонка" type="text">
+                        </label>
+                    </div>
+                    <input  class="form__input form__input--phone"
+                            type="phone"
+                            name="Телефон"
+                            placeholder="Ваш номер телефона"
+                            required>
+                    <input class="form__input--btn" type="submit" value="Заказать обратный звонок">
+                </form>
+
+            </div>
         </div>
     </section>
 

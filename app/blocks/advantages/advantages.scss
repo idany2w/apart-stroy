@@ -1,0 +1,70 @@
+.advantages{
+
+    &__title{
+        font-family: Bebas Neue;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 110%;
+        letter-spacing: 0.02em;
+        color: #426667;
+        margin-top: 21px;
+        margin-bottom: 21px;
+        @include media-breakpoint-up(xl) {
+            font-size: 55px;
+            line-height: 110%;
+            margin-top: 0px;
+            margin-bottom: 21px;
+        }
+    }
+    &__description{
+        font-family: Geometria;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #274646;
+        margin-top: 0px;
+        margin-bottom: 26px;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+            margin: 0px;
+        }
+    }
+
+    &__list{
+        list-style: none;
+        margin: 0;
+        padding-left: 0px;
+        margin-bottom: 18px;
+        margin-left: 80px;
+
+        @include media-breakpoint-up(xl) {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 0;
+        }
+    }
+
+    &__list-item{
+        margin-bottom: 18px;
+        @include media-breakpoint-up(xl) {
+            width: 200px;
+            margin-bottom: 0px;
+
+            &:last-child{
+                width: 160px;
+                padding-left: 30px;
+            }
+        }
+    }    
+}
+@include media-breakpoint-down(lg) {
+    .hidden-lg-down{
+        display: none !important;
+    }
+}
