@@ -3546,6 +3546,10 @@ button {
   }
 }
 
+.hidden-xs-up {
+  display: none !important;
+}
+
 .advantages__title {
   font-family: Bebas Neue;
   font-style: normal;
@@ -3625,6 +3629,125 @@ button {
   }
 }
 
+.blob {
+  position: relative;
+}
+
+.blob__text {
+  position: relative;
+  z-index: 1;
+}
+
+.blob__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.blob__bg-el {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blob__bg-el--desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .blob__bg-el--desktop {
+    display: block;
+  }
+}
+
+.blob2 {
+  position: relative;
+  padding-top: 160px;
+}
+
+@media (min-width: 1200px) {
+  .blob2 {
+    padding-top: 210px;
+  }
+}
+
+.blob2__text {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #274646;
+  margin-bottom: 50px;
+  margin-left: 130px;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .blob2__text {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #274646;
+    width: initial;
+    margin-left: initial;
+    float: right;
+  }
+}
+
+#b352 {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 5px;
+  width: 233px;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  #b352 {
+    width: auto;
+  }
+}
+
+#b372 {
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: 10px;
+  width: 228px;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  #b372 {
+    width: auto;
+  }
+}
+
+#b373 {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 10px;
+  width: 228px;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  #b373 {
+    width: auto;
+  }
+}
+
 .call-time {
   display: flex;
 }
@@ -3690,7 +3813,6 @@ button {
   outline: none !important;
   color: #fff;
   width: 100%;
-  font-size: 15px;
   padding: 0px;
   display: block;
 }
@@ -3699,42 +3821,6 @@ button {
   .call-time__input {
     margin-bottom: 9px;
     width: initial;
-    font-size: inherit;
-  }
-}
-
-.blob {
-  position: relative;
-}
-
-.blob__text {
-  position: relative;
-  z-index: 1;
-}
-
-.blob__bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.blob__bg-el {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.blob__bg-el--desktop {
-  display: none;
-}
-
-@media (min-width: 1200px) {
-  .blob__bg-el--desktop {
-    display: block;
   }
 }
 
@@ -4281,10 +4367,116 @@ button {
   }
 }
 
+.price {
+  padding-top: 95px;
+  padding-bottom: 65px;
+}
+
+@media (min-width: 1200px) {
+  .price {
+    min-height: 715px;
+    padding-top: 195px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price__container {
+    padding-top: 75px;
+    padding-bottom: 178px;
+    position: relative;
+  }
+}
+
+.price__img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  .price__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: initial;
+  }
+}
+
+.price__main-title {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  color: #426667;
+  margin-top: 0px;
+  margin-bottom: 22px;
+}
+
+@media (min-width: 1200px) {
+  .price__main-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    margin-top: 0px;
+    margin-bottom: 55px;
+  }
+}
+
+.price__main-title + .price__main-title {
+  margin-top: -22px;
+}
+
+@media (min-width: 1200px) {
+  .price__main-title + .price__main-title {
+    margin-top: -55px;
+  }
+}
+
+.price__main-title--strong {
+  font-weight: bold;
+  color: #C85664;
+}
+
+.price__desc {
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #274646;
+  margin-top: 0px;
+  margin-bottom: 27px;
+}
+
+@media (min-width: 1200px) {
+  .price__desc {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+.tabs__caption {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  color: #426667;
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+
+.underlined-title {
+  margin-bottom: 44px;
+}
+
 @media (min-width: 1200px) {
   .underlined-title {
     margin-top: 18px;
-    margin-bottom: 44px;
   }
 }
 

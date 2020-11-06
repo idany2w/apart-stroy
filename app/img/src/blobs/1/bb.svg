@@ -6,7 +6,7 @@
 	                    type="rotate"
 	                    from="0 0 0"
 	                    to="360 0 0"
-	                    dur="50s"
+	                    dur="10s"
 	                    repeatCount="indefinite"/>
 	</g>
 	<g style="transform-origin:center; transform-box: fill-box">
@@ -16,7 +16,7 @@
 	                    type="rotate"
 	                    from="0 0 0"
 	                    to="-360 0 0"
-	                    dur="50s"
+	                    dur="10s"
 	                    repeatCount="indefinite"/>
 	</g>
 </svg>

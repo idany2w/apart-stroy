@@ -11,10 +11,14 @@ function popup_show(contentId) {
 
     popup.classList.add('popup--show')
     popup__content.classList.add('popup__content--show')
+    document.body.style.overflow = 'hidden';
 }
 
 function popup_hide(e){
-    if(e.target === popup) popup.classList.remove('popup--show')
+    if(e.target == popup) {
+        popup.classList.remove('popup--show');
+        document.body.style.overflow = '';
+    }
 }
 
 popup.addEventListener('click', popup_hide, false)

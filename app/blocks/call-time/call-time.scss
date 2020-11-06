@@ -57,13 +57,11 @@
     outline: none !important;
     color: #fff;
     width: 100%;
-    font-size: 15px;
     padding: 0px;
     display: block;
 
     @include media-breakpoint-up(xl) {
         margin-bottom: 9px;
         width: initial;
-        font-size: inherit;
     }
 }

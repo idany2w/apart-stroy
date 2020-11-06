@@ -11,7 +11,7 @@ function header__stickyFunc(){
 function header__burgerClick(e){
 	if(!e.target.classList.contains('header__burger')) return false
 	
-	if(document.body.style.overflow){
+	if(e.target.classList.contains('header__burger--close')){
 		document.body.style.overflow = '';
 	} else{
 		document.body.style.overflow = 'hidden';
@@ -24,8 +24,18 @@ function header__burgerClick(e){
 }
 
 function header__navClick(e){
-	if(e.target.closest('.header__menu') || e.target.closest('.header__btn')){
-		header__burgerClick({target: document.querySelector('.header__burger')})
+	const isHeader__nav_show = e.target.closest('.header__nav--show');
+	const isHeader__menu= e.target.closest('.header__menu');
+	const isHeader__burger = e.target.closest('.header__btn');
+
+	if(isHeader__nav_show && (isHeader__menu || isHeader__burger)){
+		document.querySelector('.header__burger').classList.remove('header__burger--close');
+		document.querySelector('.header__nav').classList.remove('header__nav--show')
+		document.querySelector('.header__nav').scrollTop = 0;
+
+		if(!isHeader__burger){
+			document.body.style.overflow = ''
+		}
 	}
 }
 

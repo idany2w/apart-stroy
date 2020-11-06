@@ -1,0 +1,73 @@
+.blob2{
+    position: relative;
+    padding-top: 160px;
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 210px;
+    }
+}
+
+.blob2__text{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #274646;
+    margin-bottom: 50px;
+    margin-left: 130px;
+    display: block;
+
+    @include media-breakpoint-up(xl) {
+        font-family: Bebas Neue;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #274646;
+        width: initial;
+        margin-left: initial;
+        float: right;
+    }
+}
+
+
+#b352{
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 5px;
+    width: 233px;
+    height: auto;
+
+    @include media-breakpoint-up(xl) {
+        width: auto;
+    }
+}
+
+#b372{
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: 10px;
+    width: 228px;
+    height: auto;
+
+    @include media-breakpoint-up(xl) {
+        width: auto;
+    }
+}
+
+#b373{
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 10px;
+    width: 228px;
+    height: auto;
+    @include media-breakpoint-up(xl) {
+        width: auto;
+    }
+}

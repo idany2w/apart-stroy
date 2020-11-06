@@ -15,6 +15,7 @@ forms.forEach(form => {
             .then((response) => {
                 console.log(response);
                 form.reset();
+                popup_hide({target: e.target.closest('.popup--show')})
             })
     });
 });

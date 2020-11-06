@@ -1,0 +1,77 @@
+.price{
+    padding-top: 95px;
+    padding-bottom: 65px;
+    @include media-breakpoint-up(xl) {
+        min-height: 715px;
+        padding-top: 195px;
+        padding-bottom: 30px;
+    }
+}
+
+.price__container{
+    @include media-breakpoint-up(xl) {
+        padding-top: 75px;
+        padding-bottom: 178px;
+        position: relative;
+    }
+}
+
+.price__img{
+    width: 100%;
+    height: auto;
+    @include media-breakpoint-up(xl) {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: initial;
+    }
+}
+
+.price__main-title{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #426667;
+    margin-top: 0px;
+    margin-bottom: 22px;
+
+    @include media-breakpoint-up(xl) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 55px;
+        margin-top: 0px;
+        margin-bottom: 55px;
+    }
+
+    & + .price__main-title{
+        margin-top: -22px;
+        @include media-breakpoint-up(xl) {
+            margin-top: -55px;
+        }
+    }
+
+    &--strong{
+        font-weight: bold;
+        color: #C85664;
+    }
+}
+
+.price__desc{
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #274646;
+    margin-top: 0px;
+    margin-bottom: 27px;
+
+    @include media-breakpoint-up(xl) {
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+}
