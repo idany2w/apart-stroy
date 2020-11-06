@@ -162,18 +162,126 @@
         </div>
     </section>
 
-    <section class="tabs">
+    <section class="price-tabs">
         <div class="container">
-            <h1 class="tabs__caption"><strong>Мы говорим<br class="d-sm-none"> реальные цены,</strong><br> которые НЕ МЕНЯЮТСЯ<br class="d-sm-none"> на этапе ремонта</h1>
+            <h1 class="price-tabs__caption"><strong>Мы говорим<br class="d-sm-none"> реальные цены,</strong><br> которые НЕ МЕНЯЮТСЯ<br class="d-sm-none"> на этапе ремонта</h1>
+            <div class="tabs">
+                <ul class="tabs__controls">
+                    <li class="tabs__control tabs__control--active" data-tab-id="cap" tabindex="0">Капитальный ремонт</li>
+                    <li class="tabs__control" data-tab-id="euro" tabindex="0">Евроремонт</li>
+                    <li class="tabs__control" data-tab-id="design" tabindex="0">Дизайнерский ремонт</li>
+                </ul>
+                <div class="tabs__tab tabs__tab--active" data-tab-id="cap">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="price-tabs__img" src="img/dist/price-tabs/pic_3.jpg" alt="">
+                            <img class="price-tabs__img" src="img/dist/price-tabs/pic_2.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="price-tabs__text">
+                                <h4 class="price-tabs__text-caption">Дома старого фонда, не старше 1950-х годов</h4>
+                                <ul class="price-tabs__list">
+                                    <li class="price-tabs__list-item">комплексный демонтаж</li>
+                                    <li class="price-tabs__list-item">монтаж межкомнатных перегородок</li>
+                                    <li class="price-tabs__list-item">замена сантехнической разводки</li>
+                                    <li class="price-tabs__list-item">полный комплекс электромонтажных работ</li>
+                                    <li class="price-tabs__list-item">чистовая отделка "под ключ" (отделка стен,<br> кладка наполного покрытия, укладка кафеля и др.)</li>
+                                </ul>
+                            </div>
+                            <div class="price-tabs__bottom">
+                                <div class="price-tabs__info">
+                                    <span class="price-tabs__info-name">Стоимость</span>
+                                    <span class="price-tabs__info-value">от <span class="price-tabs__info-number">10 000</span> руб/м2</span>
+                                </div>
+                                
+                                <div class="price-tabs__info">
+                                    <span class="price-tabs__info-name">Сроки</span>
+                                    <span class="price-tabs__info-value">от <span class="price-tabs__info-number">2</span> месяцев</span>
+                                </div>
 
-            .tabs
+                                <button class="price-tabs__btn btn btn--style-1" onclick="popup_show('form2')">Нужен такой ремонт?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__tab" data-tab-id="euro">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="price-tabs__img" src="img/dist/price-tabs/pic_1.jpg" alt="">
+                            <img class="price-tabs__img" src="img/dist/price-tabs/pic_5.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="price-tabs__text">
+                                <h4 class="price-tabs__text-caption">Новостройки с отделкой или без, дома старого фонда</h4>
+                                <ul class="price-tabs__list">
+                                    <li class="price-tabs__list-item">разработка дизайн проекта</li>
+                                    <li class="price-tabs__list-item">визуализация проекта</li>
+                                    <li class="price-tabs__list-item">подбор материалов дизайнером и сопровождение ремонта</li>
+                                    <li class="price-tabs__list-item">монтаж перегородок</li>
+                                    <li class="price-tabs__list-item">подготовка стен под чистовую отделку</li>
+                                    <li class="price-tabs__list-item">разботы по сантехнической разводке</li>
+                                    <li class="price-tabs__list-item">комплекс электромонтажных работ</li>
+                                    <li class="price-tabs__list-item">чистовая отделка под ключ (отделка стен,<br> 
+                                        кладка наполного покрытия, укладка кафеля и др.)</li>
+                                </ul>
+                            </div>
+                            <div class="price-tabs__bottom">
+                                <div class="price-tabs__info">
+                                    <span class="price-tabs__info-name">Стоимость</span>
+                                    <span class="price-tabs__info-value">от <span class="price-tabs__info-number">12 000</span> руб/м2</span>
+                                </div>
+                                
+                                <div class="price-tabs__info">
+                                    <span class="price-tabs__info-name">Сроки</span>
+                                    <span class="price-tabs__info-value">от <span class="price-tabs__info-number">2</span> месяцев</span>
+                                </div>
+
+                                <button class="price-tabs__btn btn btn--style-1" onclick="popup_show('form2')">Нужен такой ремонт?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__tab" data-tab-id="design">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="price-tabs__img" src="img/dist/price-tabs/pic_6.jpg" alt="">
+                            <img class="price-tabs__img" src="img/dist/price-tabs/pic_4.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="price-tabs__text">
+                                <h4 class="price-tabs__text-caption">Новостройки с отделкой или без</h4>
+                                <ul class="price-tabs__list">
+                                    <li class="price-tabs__list-item">монтаж перегородок</li>
+                                    <li class="price-tabs__list-item">подготовка стен под чистовую отделку</li>
+                                    <li class="price-tabs__list-item">разботы по сантехнической разводке</li>
+                                    <li class="price-tabs__list-item">комплекс электромонтажных работ</li>
+                                    <li class="price-tabs__list-item">чистовая отделка под ключ (отделка стен,<br> 
+                                        кладка наполного покрытия, укладка кафеля и др.)</li>
+                                </ul>
+                            </div>
+                            <div class="price-tabs__bottom">
+                                <div class="price-tabs__info">
+                                    <span class="price-tabs__info-name">Стоимость</span>
+                                    <span class="price-tabs__info-value">от <span class="price-tabs__info-number">7 500</span> руб/м2</span>
+                                </div>
+                                
+                                <div class="price-tabs__info">
+                                    <span class="price-tabs__info-name">Сроки</span>
+                                    <span class="price-tabs__info-value">от <span class="price-tabs__info-number">1,5</span> месяцев</span>
+                                </div>
+
+                                <button class="price-tabs__btn btn btn--style-1" onclick="popup_show('form2')">Нужен такой ремонт?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="popup">
         <div class="popup__inner">
             <div class="popup__content" data-content-id="form">
-
                 <h3 class="popup__title">Заявка на обратный звонок</h3>
                 <p class="popup__desc">Оставьте свои контактные данные и мы перезвоним вам в удобное время</p>
 
@@ -189,9 +297,19 @@
                     </div>
                     <input class="form__input form__input--phone" type="phone" name="Телефон"
                         placeholder="Ваш номер телефона" required>
-                    <input class="form__input--btn" type="submit" value="Заказать обратный звонок">
+                    <input class="form__input--btn btn btn--style-1" type="submit" value="Заказать обратный звонок">
                 </form>
-
+            </div>
+            <div class="popup__content" data-content-id="form2">
+                <h3 class="popup__title">Ремонт в похожем стиле</h3>
+                <p class="popup__desc">Мы сможем сделать для вас ремонт<br> 
+                    в похожем стиле.<br> 
+                    Оставьте свой номер телефона ниже</p>
+                <form class="form form--popup">
+                    <input class="form__input form__input--phone" type="phone" name="Телефон"
+                        placeholder="Ваш номер телефона" required>
+                    <input class="form__input--btn btn btn--style-1" type="submit" value="Ремонт в похожем стиле">
+                </form>
             </div>
         </div>
     </section>

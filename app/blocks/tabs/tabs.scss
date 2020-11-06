@@ -1,12 +1,49 @@
-.tabs__caption{
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 110%;
-    letter-spacing: 0.02em;
-    color: #426667;
+.tabs__controls {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 22px;
+	margin-bottom: 20px;
+	@include media-breakpoint-up(xl) {
+		display: flex;
+		align-items: flex-end;
+		padding-left: 0px;
+	}
+}
+.tabs__control {
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 130%;
+	letter-spacing: 0.03em;
+	color: #426667;
+	margin-bottom: 25px;
+	cursor: pointer;
 
-    margin-top: 0px;
-    margin-bottom: 45px;
+	@include media-breakpoint-up(xl) {
+		font-size: 36px;
+		text-align: center;
+		flex-basis: 33%;
+		border-bottom: 3px solid #426667;
+		& + .tabs__control {
+			margin-left: 10px;
+		}
+
+		&--active,
+		&:hover,
+		&:focus {
+			border-color: #c85664;
+		}
+	}
+
+	&--active,
+	&:hover,
+	&:focus {
+		color: #c85664;
+	}
+}
+
+.tabs__tab:not(.tabs__tab--active) {
+	display: none;
 }

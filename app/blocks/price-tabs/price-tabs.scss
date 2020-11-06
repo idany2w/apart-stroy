@@ -1,0 +1,157 @@
+.price-tabs__caption{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #426667;
+
+    margin-top: 0px;
+    margin-bottom: 45px;
+
+    @include media-breakpoint-up(xl) {
+        font-size: 55px;
+    }
+}
+
+.price-tabs__img{
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    width: 100%;
+    @include media-breakpoint-up(xl) {
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.price-tabs__text-caption{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #6FABA7;
+
+    max-width: 220px;
+    margin-top: 25px;
+    margin-bottom: 11px;
+    @include media-breakpoint-up(xl) {
+        font-size: 30px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+
+        
+        margin-top: 12px;
+        margin-bottom: 24px;
+        max-width: 100%;
+    }
+}
+
+.price-tabs__list{
+    margin: 11px 0;
+    list-style: none;
+    padding-left: 0;
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 31px;
+    }
+}
+
+.price-tabs__list-item{
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #274646;
+
+    position: relative;
+    padding-left: 24px;
+    
+    @include media-breakpoint-up(xl) {
+        font-size: 17px;
+        line-height: 170%;
+        padding-left: 30px;
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #6FABA7;
+        border: 2.48px solid;
+        border-color: #BAE4E2;
+        border-radius: 100%;
+        position: absolute;
+        left: 0;
+        top: 4.21px;
+        box-sizing: content-box;
+    }
+}
+
+.price-tabs__bottom{
+    @include media-breakpoint-up(xl) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.price-tabs__info{
+    display: flex;
+    align-items: baseline;
+    @include media-breakpoint-up(xl) {
+        flex-direction: column;
+        margin: 0 30px;
+    }
+}
+
+.price-tabs__info-name{
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #6FABA7;
+    margin-right: 28px;
+    text-transform: uppercase;
+    @include media-breakpoint-up(xl) {
+        font-size: 14px;
+    }
+}
+
+.price-tabs__info-value{
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.02em;
+    color: #C85664;
+}
+
+.price-tabs__info-number{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #C85664;
+}
+
+.price-tabs__btn{
+    margin-top: 16px;
+    padding: 24px 40px 20px;
+    @include media-breakpoint-up(xl) {
+        margin-top: 0px;
+        padding: 35px 53.5px 31px;
+    }
+}
