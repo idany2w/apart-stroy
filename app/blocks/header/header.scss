@@ -145,7 +145,8 @@
     text-transform: uppercase;
     transition: text-decoration .25s;
 
-    &:hover{
+    &:hover,
+    &:focus{
         text-decoration: underline;
     }
 }

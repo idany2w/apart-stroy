@@ -1,3 +1,7 @@
+.price-tabs{
+    padding-bottom: 50px;
+}
+
 .price-tabs__caption{
     font-family: Bebas Neue;
     font-style: normal;
@@ -92,6 +96,9 @@
         left: 0;
         top: 4.21px;
         box-sizing: content-box;
+        @include media-breakpoint-up(xl) {
+            top: 10px;
+        }
     }
 }
 
