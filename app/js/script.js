@@ -40,29 +40,6 @@ function callTime__inputClick(e){
 
 document.addEventListener('click', callTime__elClick);
 document.addEventListener('click', callTime__inputClick);
-const form_submit = async (formData) => {
-    const fetchResp = await fetch('mail.php', {
-        method: 'POST',
-        body: formData
-    });
-};
-
-const forms = document.querySelectorAll('form');
-forms.forEach(form => {
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        const formData = new FormData(this);
-
-        form_submit(formData)
-            .then((response) => {
-                console.log(response);
-                form.reset();
-                popup_hide({target: e.target.closest('.popup--show')})
-            })
-    });
-});
-
-
 function header__stickyFunc(){
 	if (window.pageYOffset !== 0){
 		document.querySelector('.header').classList.add('header--sticky');
@@ -111,6 +88,29 @@ window.addEventListener('load', function(){
 	document.addEventListener('click', header__burgerClick);
 	document.addEventListener('click', header__navClick)
 })
+const form_submit = async (formData) => {
+    const fetchResp = await fetch('mail.php', {
+        method: 'POST',
+        body: formData
+    });
+};
+
+const forms = document.querySelectorAll('form');
+forms.forEach(form => {
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+
+        form_submit(formData)
+            .then((response) => {
+                console.log(response);
+                form.reset();
+                popup_hide({target: e.target.closest('.popup--show')})
+            })
+    });
+});
+
+
 const popup = document.querySelector('.popup')
 
 function popup_show(contentId) {
